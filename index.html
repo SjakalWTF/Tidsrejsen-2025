@@ -35,7 +35,6 @@
       color: #ffffff;
     }
 
-    /* Popup besked */
     #popup {
       display: none;
       position: fixed;
@@ -51,7 +50,7 @@
       opacity: 0.95;
     }
 
-    #content img {
+    #logo-click {
       cursor: pointer;
     }
   </style>
@@ -69,7 +68,7 @@
           <span class="icon-bar"></span>
         </button>
       </div>
-      <a class="navbar-brand img-responsive" href=""><strong>Tids</strong>Rejsen</a>
+      <a class="navbar-brand img-responsive" href="#"><strong>Tids</strong>Rejsen</a>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="nav navbar-nav">
           <li>
@@ -91,7 +90,8 @@
 
   <!-- HERO / INDHOLD -->
   <div id="content" class="text-center">
-    <img src="logo.png" alt="TidsRejsen logo" class="img-responsive center-block" onclick="copyIP()" title="Klik for at kopiere server IP" />
+    <img id="logo-click" src="logo.png" alt="TidsRejsen logo" class="img-responsive center-block"
+         onclick="copyIP()" title="Klik for at kopiere IP" />
 
     <div class="intro-text text-center">
       <h3>Dansk Minecraft-server under udvikling</h3>
