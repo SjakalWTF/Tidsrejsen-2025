@@ -1,123 +1,50 @@
 <!DOCTYPE html>
-<html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html class="no-js" lang="" oncontextmenu="return false" onkeydown="return false;" onmousedown="return false;">
+<link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
+  <head>
     <title>Hjem | TidsRejsen</title>
-    
-    <!-- Link til Font Awesome (for ikoner) -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-
-    <!-- Link til Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
-
-    <!-- Link til Bootstrap 4.5 (nyere version) -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-pzjw8f+ua7Kw1TIq0d9bB0V4+8x9C+4A7XjmZTptu4kxFfGqESbC9tvqIckxFz6H" crossorigin="anonymous">
-
-    <!-- Link til din egen CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
-
-    <style>
-        /* CSS Reset for margin og padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Juster baggrundsfarve og skriftfarve */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        /* Style til navbar */
-        .navbar-brand {
-            font-weight: bold;
-        }
-
-        /* Justering af indholdet */
-        #content {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        /* Opdeling af tekst, første linje og den stærke tekst på en ny linje */
-        #content p {
-            font-size: 1.2rem;
-        }
-
-        #content strong {
-            display: block;  /* Skubber det til en ny linje */
-            margin-top: 10px;
-            font-size: 1.4rem;
-            color: orange;  /* Ændrer farven på den stærke tekst */
-        }
-
-        /* Footer justering */
-        .footer {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Navigation Bar -->
-    <div class="navbar navbar-expand-lg navbar-light bg-light">
+  </head>
+  
+  <body>
+    <div class="navbar navbar-default navbar-static-top">
         <div class="container">
-            <a class="navbar-brand" href="#">TidsRejsen</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://423132moiglrxp6yvbdka6.buycraft.net/?action=preview&signature=1a72932678b0aa969066571a48684b0d998bd7a3491faa6084e24310e479fea8&expires=1745112178">
-                            <i class="shopping-cart"></i> Butik
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-map-pin"></i> Destinationer</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Om os</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-envelope"></i> Kontakt os</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-wikipedia-w"></i></a>
-                    </li>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <a class="navbar-brand"class="img-responsive"href="#"><strong>Tids</strong>Rejsen</a>
+            <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                    <li><p class="navbar-btn"><a href="https://423132moiglrxp6yvbdka6.buycraft.net/?action=preview&signature=1a72932678b0aa969066571a48684b0d998bd7a3491faa6084e24310e479fea8&expires=1745112178" id="store-button" class="btn btn-default"><i class="shopping-cart" aria-hidden="true"></i>&nbsp;Butik</a></p></li>
+                    <li><a href="#"><i class="fa fa-map-pin" aria-hidden="true"></i>&nbsp;Destinationer</a></li>
+                    <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i>&nbsp;Om os</a></li>
+                    <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Kontakt os</a></li>
+                    <li><a href="#"><i class="fa fa-wikipedia-w" aria-hidden="true"></i>&nbsp;</a></li>
                 </ul>
             </div>
         </div>
     </div>
-
-    <!-- Main Content -->
     <div id="content">
-        <img src="logo.png" alt="TidsRejsen Logo"/>
-        <div>
-            <p>Dansk minecraft server Under udvikling</p>
-            <p><strong>Udforsk og rejs igennem tid og sted!</strong></p>
-        </div>
+      <img src="logo.png"/>
+      <div>
+        <p>Dansk minecraft server Under udvikling <strong>Udforsk og rejs igennem tid og sted!</strong></p>
+      </div>
     </div>
-
-    <!-- Footer -->
-    <div class="footer">
+    <div class="footer navbar-default navbar-fixed-bottom" style="margin-top: 500px;">
         <div class="container">
             <p class="navbar-text pull-left">Copyright © <strong>TidsRejsen 2025</strong></p>
         </div>
     </div>
-
-    <!-- JavaScript (jQuery og Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0d9bB0V4+8x9C+4A7XjmZTptu4kxFfGqESbC9tvqIckxFz6H" crossorigin="anonymous"></script>
-
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
+<!-- Lavet af Nicolai Lund Poulsen -->
