@@ -34,6 +34,26 @@
       font-weight: bold;
       color: #ffffff;
     }
+
+    /* Popup besked */
+    #popup {
+      display: none;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      z-index: 9999;
+      font-size: 16px;
+      opacity: 0.95;
+    }
+
+    #content img {
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -70,14 +90,17 @@
   </nav>
 
   <!-- HERO / INDHOLD -->
-  <div id="content">
-    <img src="logo.png" alt="TidsRejsen logo" class="img-responsive center-block" />
+  <div id="content" class="text-center">
+    <img src="logo.png" alt="TidsRejsen logo" class="img-responsive center-block" onclick="copyIP()" title="Klik for at kopiere server IP" />
 
     <div class="intro-text text-center">
       <h3>Dansk Minecraft-server under udvikling</h3>
       <p><strong>Udforsk og rejs igennem tid og sted!</strong></p>
     </div>
   </div>
+
+  <!-- POPUP BESKED -->
+  <div id="popup">Server IP kopieret!</div>
 
   <!-- FOOTER -->
   <footer class="footer navbar-default navbar-fixed-bottom" style="margin-top: 500px;">
@@ -92,5 +115,22 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
           integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
           crossorigin="anonymous"></script>
+  <script>
+    function copyIP() {
+      const ip = "mc.tidsrejsen.net";
+      const tempInput = document.createElement("input");
+      document.body.appendChild(tempInput);
+      tempInput.value = ip;
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+
+      const popup = document.getElementById("popup");
+      popup.style.display = "block";
+      setTimeout(() => {
+        popup.style.display = "none";
+      }, 2000);
+    }
+  </script>
 </body>
 </html>
