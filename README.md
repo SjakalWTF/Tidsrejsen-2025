@@ -1,4 +1,4 @@
 # TidsRejsen
-minecraft hjemmeside til tidsrejsen.cc
+minecraft hjemmeside til mc.tidsrejsen.net
 
-Copyright 2021 sjakal
+Copyright 2025
